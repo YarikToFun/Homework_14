@@ -1,0 +1,86 @@
+body {
+    margin: 0px;
+}
+
+.item_handbags{
+	background-image: url(https://images.unsplash.com/photo-1596149615493-f0739de31c2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1189&q=80.jpeg);
+	background-position: center;
+    background-size: cover;
+	height: 140%;
+	width: 95%;	
+	display: flex;
+	flex-direction: column;
+}
+.handbags{
+	margin-top: auto;
+}
+
+.item_watch{
+	background-image: url(https://images.unsplash.com/photo-1523170335258-f5ed11844a49?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1059&q=80);
+	background-position: center;
+    background-size: cover;
+	height: 140%;
+	width: 95%;	
+	display: flex;
+	flex-direction: column;
+}
+
+.watch{
+	margin-top: auto;
+}
+
+.item_shoes{
+	background-image: url(https://images.unsplash.com/photo-1496202703211-aa28e9500c30?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
+	background-position: center;
+	background-size: cover;
+	height: 140%;
+	width: 100%;	
+	display: flex;
+	flex-direction: column;
+}
+
+.shoes{
+	margin-top: auto;
+}
+
+.box{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 3fr 1fr;
+	grid-template-areas:"handbags  watch  shoes";
+   grid-gap: 20px;							  
+}
+
+.bottom-content{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+@media (max-width: 576px){
+
+	.header_navbar {
+		display: none;
+	}
+
+	.bottom-content {
+		display: none;
+	}
+
+	.box{
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		padding: 15px;
+		padding-bottom: 0;
+		font-weight: 500;
+	}
+
+	.header_nav {
+		font-size: 10px;
+	}
+
+	.text {
+		display: none;
+	}
+
+}
